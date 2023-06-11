@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 2rem;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      body {
+        height: 100vh;
+        background-color: hsl(225, 100%, 94%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      section {
+        background-color: white;
+        border-radius: 10px;
+        /* border: 3px solid red; */
+        width: 280px;
+        /* height: fit-content; */
+      
+        overflow: hidden;
+        padding-bottom: 12px;
+      }
+      img {
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        font-size: 12px;
+        color: hsl(224, 23%, 55%);
+      }
+      h3 {
+        color: hsl(223, 47%, 23%);
+      }
+      .margin {
+        margin-top: 20px;
+      }
+      button {
+        color: #fff;
+        width: 85%;
+        padding: 6px 0px;
+        font-size: 12px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: hsl(245, 75%, 52%);
+      }
+    button:hover{
+      background-color:hsl(224, 23%, 55%) ;
+    }
+      .canc {
+        margin-top: 6px;
+      }
+      .mlogo {
+        width: 30px;
+      }
+      span {
+        font-size: 10px;
+      }
+      .spans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .left {
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        flex-direction: row;
+      }
+      .music{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .bold {
+        font-weight: bold;
+        color: hsl(223, 47%, 23%);
+      }
+      .dol {
+        color: hsl(224, 23%, 55%);
+      }
+      .link {
+        cursor: pointer;
+        font-size: 12px;
+        text-decoration: underline;
+        color: hsl(223, 47%, 23%);
+        font-weight: 600;
+      }
+      .link:hover{
+        color:hsl(222, 25%, 30%);
+        cursor: pointer;
+      }
+      .box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 12px ;
+      }
+      body{
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat:no-repeat;
+        background-size:100%;
+      }
+      @media screen and (max-width:475px){
+        body{
+        background-image: url("images/pattern-background-mobile.svg");
+      }
+      section{
+        max-width: 90%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img src="images/illustration-hero.svg" alt="" />
+      <div class="box">
+      <h3 class="margin">Order Summary</h3>
+
+      <p class="margin">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+
+      <div class="margin music">
+        <div class="left">
+        <img class="mlogo" src="images/icon-music.svg" alt="music logo" />
+        <div class="spans">
+          <span class="bold">Annual Plan</span>
+          <span class="dol">$59.99/year</span>
+        </div>
+      </div>
+      <div class="right">
+        <span class="link">Change</span>
+      </div>
+      </div>
+
+      <button class="margin">Proceed to Payment</button>
+      <p class="canc">Cancel Order</p>
+      <p></p>
+    </div>
+    </section>
+
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Raunakmishra-06">Raunak Mishra</a>.
+  </div>
+  </body>
+</html>
