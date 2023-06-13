@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Overpass:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,6 +18,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'League Spartan', sans-serif;
     }
     :root{
       --result-color:hsl(0, 0%, 100%);
@@ -36,7 +39,7 @@
       font-size: 62.5%;
     }
     body{
-      font-family: sans-serif;
+     
       background-color:var(--background-color);
       display: flex;
       justify-content: center;
@@ -171,6 +174,7 @@
           align-items: flex-end;
         }
         .theme>span{
+          font-size: 1rem;
           margin-right: 20px;
           margin-bottom: 5px;
         }
@@ -221,8 +225,8 @@
           color: var(--result-color);
           font-size:4rem ;
           padding-left: 2.4rem;
+          font-weight: 700;
         }
-        
   </style>
 </head>
 <body>
@@ -287,8 +291,11 @@
     // toggle section
     const toggleBtn = document.querySelector('.button');
     const toggleBox = document.querySelector('.toggle');
-    // toggleBtn.addEventListener('click',()=>{
-       
+
+
+
+
+    // toggleBtn.addEventListener('click',()=>{  
     //  if(toggleBtn.classList.contains('middle')){
     //         document.body.classList.remove('second');
     //         document.body.classList.add('third');
@@ -303,8 +310,10 @@
     //       document.body.classList.add('second');
     //         toggleBtn.classList.add('middle');
     //     }
-        
     // });
+
+
+
 
     toggleBox.addEventListener('click',()=>{
       if(toggleBtn.classList.contains('middle')){
@@ -343,6 +352,8 @@
             document.querySelector('.result').innerHTML=num;
             console.log(typeof(num));
         }
+
+    
 </script>
 </body>
 </html>
