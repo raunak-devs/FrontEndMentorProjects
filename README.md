@@ -1,4 +1,4 @@
-# Hey Buddy!👋
+# Hey Buddy <img width="35" src="https://github.com/1999AZZAR/1999AZZAR/blob/main/resources/img/waving.gif">
 
 Welcome to the Front-end Mentor Projects Repository! This repository is created with the aim of providing a helpful resource for beginner developers. Here, you will find all the source code for various projects available on the Front-end Mentor platform.
 
@@ -9,7 +9,7 @@ Front-end Mentor is an online platform that offers a collection of real-world fr
 The purpose of this repository is to gather all the source code solutions for the projects available on Front-end Mentor. It aims to provide an accessible resource for beginners who are looking to learn from practical examples and improve their front-end development abilities.
 
 
-## How to Contribute
+## How to Contribute  <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50">
 We welcome contributions from developers of all skill levels. If you want to collaborate on this project and help other beginner developers, here's how you can contribute:
 
 - Fork this repository to your GitHub account.
